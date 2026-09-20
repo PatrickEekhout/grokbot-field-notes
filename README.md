@@ -24,6 +24,8 @@ Three engineers from the xAI Grok Bot team built and launched a product from an 
 | `roster/` | Sixty-nine agent roles, one file each. What the role owns, what it doesn't, where it gets its facts, what needs approval, and a description you can paste. |
 | `playbooks/` | Nine role workshops: engineering, PM, founders, sales engineering, sales, SDR, support, post-sales, marketing. Each has the team of bots, the workflow as it ran, the prompts, the routines and the numbers. |
 | `guide/` | [*Grok Bot Guide by SpaceX Engineers*](guide/grok-bot-guide-by-spacex-engineers.pdf), a 24-page PDF that tells the three days as a story: mental model, software factory, case study, failure log, economics. |
+| `ports/` | The roster as Cursor rules, one `.mdc` per role, generated from `roster/`. Copy the ones you want into `.cursor/rules/`. |
+| `.github/` | A pull request template that turns the verification loop into a form: reproduced, proof attached, scope, needs a human. Copy it into your repo. |
 | `reference/` | Two short files: `ECONOMICS.md`, every cost and metric quoted with the rule it supports; `PRODUCT.md`, the parts of Grok Bot that change how you design a bot: memory, what transfers on duplicate and share, isolation, permissions. |
 | `notes/` | Structured notes, one per day. Product facts, workflows, prompts, failures, numbers, who was who. Everything else was built from these. |
 
@@ -33,6 +35,8 @@ Three engineers from the xAI Grok Bot team built and launched a product from an 
 - Your agents keep asking you to test their work: `agents/VERIFICATION.md`.
 - You are designing a team of agents rather than prompting one: `agents/ORCHESTRATION.md`.
 - You want the wording that worked: `agents/PROMPTS.md`.
+- You use Cursor: `ports/cursor/rules/`, copy what you need into `.cursor/rules/`.
+- You want your agents' PRs to carry proof: `.github/PULL_REQUEST_TEMPLATE.md`.
 - You want a bot's job description to paste: `roster/`, starting with `roster/README.md`.
 - You want a setup for your own role, say support or sales: `playbooks/`, starting with `playbooks/README.md`.
 - You want to know what goes wrong: `ANTIPATTERNS.md`.

@@ -100,6 +100,11 @@ exists, cite it in every instruction that grants autonomy:
 
 ---
 
+The three rules as a form: [`.github/PULL_REQUEST_TEMPLATE.md`](../.github/PULL_REQUEST_TEMPLATE.md).
+Copy it into your repo and the agents fill it in on every PR.
+
+---
+
 ## Fuzzing and swarms
 
 Once the CLI exists, you can point many agents at it in parallel: each runs the
