@@ -31,6 +31,12 @@ Three engineers from the xAI Grok Bot team built and launched a product from an 
 - You want the whole story: [the PDF guide](guide/grok-bot-guide-by-spacex-engineers.pdf).
 - You want to check a claim: `notes/`.
 
+## The factory, in one picture
+
+![The software factory](guide/factory/software-factory.gif)
+
+You talk to one bot. It splits the plan and hands small PRs to implementers. A verifier runs each one and attaches a video, a playtester plays it end to end, and anything that isn't a migration, a deploy or money merges on its own. User reports get reproduced before anyone fixes them. `agents/ORCHESTRATION.md` walks through it; the editable source is in `guide/factory/`.
+
 ## In one paragraph
 
 Give each agent one narrow job and a name. Build a verification loop before you build the second agent.

@@ -5,6 +5,19 @@ your roster has grown past the point where you can keep track of it.
 
 ---
 
+## The factory, in one picture
+
+![The software factory: you → chief of staff → implementers → verifier → playtester → human gate → auto-merge, with user feedback triaged back into the implementers](../guide/factory/software-factory.gif)
+
+Forward path ships. Three dashed channels send work back to the implementers:
+red CI (auto-fix runs for ten minutes before a human is paged), a bug the
+playtester found, and a user report that triage managed to reproduce. The
+human sits in two places only: the chief of staff at the start, and the gate
+in front of migrations, deploys and money. Editable source in
+`guide/factory/` (`spec.json`, `.excalidraw`, `.mp4`).
+
+---
+
 ## One bot, one job
 
 The most repeated advice across three days, from every presenter

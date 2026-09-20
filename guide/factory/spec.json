@@ -1,0 +1,132 @@
+{
+  "layout": "graph",
+  "direction": "right",
+  "style": "paper",
+  "animation": "flow",
+  "title": {
+    "prefix": "The",
+    "highlight": "Software Factory",
+    "subtitle": "433 PRs in 72 hours. One human, one chief of staff, a pipeline of narrow bots."
+  },
+  "subtitle": "Forward path ships. Dashed channels send work back to the implementers.",
+  "canvas": {
+    "fps": 20,
+    "frames": 61
+  },
+  "nodes": [
+    {
+      "id": "you",
+      "label": "You",
+      "icon": "human",
+      "icon_style": "illustrated",
+      "body": "talk to one bot"
+    },
+    {
+      "id": "users",
+      "label": "User feedback",
+      "icon": "ingest",
+      "icon_style": "illustrated",
+      "body": "form, phone, Slack"
+    },
+    {
+      "id": "steve",
+      "label": "Chief of staff",
+      "icon": "orchestrator",
+      "icon_style": "hero",
+      "icon_size": "hero",
+      "body": "splits the plan into phases"
+    },
+    {
+      "id": "triage",
+      "label": "Triage",
+      "icon": "scan",
+      "icon_style": "illustrated",
+      "body": "reproduce, then validate"
+    },
+    {
+      "id": "impl",
+      "label": "Implementers",
+      "icon": "subagent",
+      "icon_style": "illustrated",
+      "body": "small PRs, one each"
+    },
+    {
+      "id": "verify",
+      "label": "Verifier",
+      "icon": "sandbox",
+      "icon_style": "illustrated",
+      "body": "runs it, attaches video"
+    },
+    {
+      "id": "play",
+      "label": "Playtester",
+      "icon": "eye",
+      "icon_style": "illustrated",
+      "body": "plays it end to end"
+    },
+    {
+      "id": "gate",
+      "label": "Human gate",
+      "icon": "approval",
+      "icon_style": "illustrated",
+      "body": "only migrations, deploys, money"
+    },
+    {
+      "id": "merge",
+      "label": "Auto-merge",
+      "kind": "terminal",
+      "accent": "green"
+    }
+  ],
+  "edges": [
+    {
+      "from": "you",
+      "to": "steve"
+    },
+    {
+      "from": "steve",
+      "to": "impl"
+    },
+    {
+      "from": "impl",
+      "to": "verify"
+    },
+    {
+      "from": "verify",
+      "to": "play"
+    },
+    {
+      "from": "play",
+      "to": "gate"
+    },
+    {
+      "from": "gate",
+      "to": "merge"
+    },
+    {
+      "from": "users",
+      "to": "triage"
+    },
+    {
+      "from": "triage",
+      "to": "impl"
+    },
+    {
+      "from": "verify",
+      "to": "impl",
+      "kind": "loop",
+      "label": "red CI",
+      "accent": "amber"
+    },
+    {
+      "from": "play",
+      "to": "impl",
+      "kind": "loop",
+      "label": "bug found",
+      "accent": "pink"
+    }
+  ],
+  "footer": "From the xAI Grok Bot team's 72-hour live build. github.com/unicodef1wn/grokbot-field-notes",
+  "signature": "grokbot-field-notes",
+  "density": "airy"
+}
