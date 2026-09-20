@@ -2,6 +2,16 @@
 
 # Grok Bot Field Notes
 
+[![Stars](https://img.shields.io/github/stars/unicodef1wn/grokbot-field-notes?style=flat)](https://github.com/unicodef1wn/grokbot-field-notes/stargazers)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Download the PDF](https://img.shields.io/badge/PDF-download-black.svg)](https://github.com/unicodef1wn/grokbot-field-notes/releases/latest/download/grok-bot-guide-by-spacex-engineers.pdf)
+
+Copy the rules into your repo and go:
+
+```bash
+curl -o AGENTS.md https://raw.githubusercontent.com/unicodef1wn/grokbot-field-notes/main/AGENTS.md
+```
+
 Three engineers from the xAI Grok Bot team built and launched a product from an empty repo in 72 hours, live on stream, using their own agent platform: [Roshan Sadanani](https://www.linkedin.com/in/roshansadanani) (product), [Lauren Tan](https://www.linkedin.com/in/laurenelizabethtan) (engineering, author of PStack), and [Matt Palmer](https://www.linkedin.com/in/matt-palmer) (developer experience). This repo is what I pulled out of those three days: a designed guide, rules you can drop into your own agents, nine role playbooks, a catalogue of bot roles, and a log of everything that broke.
 
 ## What's here
