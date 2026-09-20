@@ -23,7 +23,7 @@ Three engineers from the xAI Grok Bot team built and launched a product from an 
 | `agents/` | The longer references `AGENTS.md` points at: verification, orchestration, skills and routines, prompts. |
 | `roster/` | Sixty-nine agent roles, one file each. What the role owns, what it doesn't, where it gets its facts, what needs approval, and a description you can paste. |
 | `playbooks/` | Nine role workshops: engineering, PM, founders, sales engineering, sales, SDR, support, post-sales, marketing. Each has the team of bots, the workflow as it ran, the prompts, the routines and the numbers. |
-| `guide/` | [*Grok Bot Guide by SpaceX Engineers*](guide/grok-bot-guide-by-spacex-engineers.pdf), a 24-page PDF that tells the three days as a story: mental model, software factory, case study, failure log, economics. |
+| `guide/` | Two PDFs. [*Grok Bot Guide by SpaceX Engineers*](guide/grok-bot-guide-by-spacex-engineers.pdf), 24 pages that tell the three days as a story: mental model, software factory, case study, failure log, economics. [*Grok Bot Marketing Guide*](guide/grok-bot-marketing-guide.pdf), 14 pages for marketers: one campaign across six bots, RevOps tools instead of rules, growth on launch day, distribution, ready-made prompts. |
 | `ports/` | The roster as Cursor rules, one `.mdc` per role, generated from `roster/`. Copy the ones you want into `.cursor/rules/`. |
 | `.github/` | A pull request template that turns the verification loop into a form: reproduced, proof attached, scope, needs a human. Copy it into your repo. |
 | `reference/` | Two short files: `ECONOMICS.md`, every cost and metric quoted with the rule it supports; `PRODUCT.md`, the parts of Grok Bot that change how you design a bot: memory, what transfers on duplicate and share, isolation, permissions. |
@@ -43,6 +43,7 @@ Three engineers from the xAI Grok Bot team built and launched a product from an 
 - You want to know what it costs and where the tokens go: `reference/ECONOMICS.md`.
 - You are deciding what goes in memory versus the description: `reference/PRODUCT.md`.
 - You want the whole story: [the PDF guide](guide/grok-bot-guide-by-spacex-engineers.pdf).
+- You do marketing: [the Marketing Guide](guide/grok-bot-marketing-guide.pdf).
 - You want to check a claim: `notes/`.
 
 ## In one paragraph
