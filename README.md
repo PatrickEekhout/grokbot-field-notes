@@ -1,3 +1,5 @@
+Source: https://substack.com/@whrrari/note/c-344006724?r=8oezxq
+
 [![Grok Bot Guide by SpaceX Engineers](guide/cover.png)](guide/grok-bot-guide-by-spacex-engineers.pdf)
 
 # Grok Bot Field Notes
