@@ -1,0 +1,1 @@
+https://substack.com/@whrrari/note/c-344006724?r=8oezxq
